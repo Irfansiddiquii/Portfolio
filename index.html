@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Irfan Siddique – Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- GSAP + ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Three.js (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div id="cur-dot"></div>
+  <div id="cur-outline"></div>
+
+  <!-- Three.js BG -->
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="wrapper">
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-logo">I.SIDDIQUE</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hire">Hire Me</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <!-- Ticker -->
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <span>✦</span> Web Developer &nbsp;
+          <span>✦</span> UI/UX Designer &nbsp;
+          <span>✦</span> React &nbsp;
+          <span>✦</span> Node.js &nbsp;
+          <span>✦</span> Three.js &nbsp;
+          <span>✦</span> Full Stack &nbsp;
+          <span>✦</span> Open to Work &nbsp;
+          <span>✦</span> Web Developer &nbsp;
+          <span>✦</span> UI/UX Designer &nbsp;
+          <span>✦</span> React &nbsp;
+          <span>✦</span> Node.js &nbsp;
+          <span>✦</span> Three.js &nbsp;
+          <span>✦</span> Full Stack &nbsp;
+          <span>✦</span> Open to Work &nbsp;
+        </div>
+      </div>
+
+      <div style="margin-top:40px;">
+        <p class="hero-label" id="h-label">// Full-Stack Web Developer</p>
+        <h1 class="hero-name" id="h-name">
+          Irfan<br/>
+          <span class="outline">Siddique</span>
+        </h1>
+        <p class="hero-role" id="h-role">
+          Building <strong>digital experiences</strong> that leave an impression.
+        </p>
+        <p class="hero-desc" id="h-desc">
+          I craft high-performance websites & web apps with clean code,
+          thoughtful design, and butter-smooth animations.
+          Currently open for freelance & full-time roles.
+        </p>
+        <div class="hero-btns" id="h-btns">
+          <button class="btn-glow" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Work</button>
+          <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+        </div>
+      </div>
+
+      <div class="scroll-hint" id="h-scroll">
+        <div class="scroll-line"></div> Scroll to explore
+      </div>
+      <div class="hero-number">01</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-img-wrap gsap-reveal">
+        <div class="about-photo">👨‍💻
+          <div class="about-photo-border"></div>
+          <div class="about-photo-accent"></div>
+          <div class="about-photo-accent2"></div>
+        </div>
+      </div>
+      <div class="gsap-reveal">
+        <p class="about-tag">// About Me</p>
+        <h2 class="about-title">Crafting the Web,<br/>One Pixel at a Time.</h2>
+        <p class="about-text">
+          I'm a passionate full-stack developer with 2+ years of experience building modern
+          web applications. I specialize in React, Node.js, and creating immersive user
+          experiences that blend performance with aesthetics.<br/><br/>
+          When I'm not coding, you'll find me exploring new design trends, contributing
+          to open-source, or experimenting with WebGL and creative coding.
+        </p>
+        <div class="about-stats">
+          <div class="about-stat-box">
+            <div class="about-stat-num">20+</div>
+            <div class="about-stat-label">Projects Done</div>
+          </div>
+          <div class="about-stat-box">
+            <div class="about-stat-num">15+</div>
+            <div class="about-stat-label">Happy Clients</div>
+          </div>
+          <div class="about-stat-box">
+            <div class="about-stat-num">2+</div>
+            <div class="about-stat-label">Years Exp.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+      <div class="section-head gsap-reveal">
+        <p class="section-tag">// What I Know</p>
+        <h2 class="section-title">Tech Stack &amp; Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-pill gsap-reveal" data-level="92">
+          <div class="skill-icon">⚛️</div>
+          <div class="skill-info">
+            <div class="skill-name">React.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="88">
+          <div class="skill-icon">🟨</div>
+          <div class="skill-info">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="85">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-info">
+            <div class="skill-name">CSS / Tailwind</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="80">
+          <div class="skill-icon">🟢</div>
+          <div class="skill-info">
+            <div class="skill-name">Node.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="75">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-info">
+            <div class="skill-name">MongoDB</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="70">
+          <div class="skill-icon">🔷</div>
+          <div class="skill-info">
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="68">
+          <div class="skill-icon">🔺</div>
+          <div class="skill-info">
+            <div class="skill-name">Three.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+        <div class="skill-pill gsap-reveal" data-level="82">
+          <div class="skill-icon">🐙</div>
+          <div class="skill-info">
+            <div class="skill-name">Git / GitHub</div>
+            <div class="skill-bar-wrap"><div class="skill-bar"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+      <div class="section-head gsap-reveal">
+        <p class="section-tag">// My Work</p>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card gsap-reveal">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a0d2a,#2a0a1a)">🤖</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript ES6+</span>
+            </div>
+            <h3 class="project-title">AI Prompt Studio</h3>
+            <p class="project-desc">Modern web-based application for creating, organizing, and managing AI prompts efficiently. Features responsive design, prompt editing, organization tools, and mobile-friendly interface for seamless workflow.</p>
+            <div class="project-links">
+              <a class="project-link" href="https://irfansiddiquii.github.io/AI-Prompt-Studio/" target="_blank">Live Demo →</a>
+              <a class="project-link secondary" href="https://github.com/Irfansiddiquii/AI-Prompt-Studio" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card gsap-reveal">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a2a,#1a0a2a)">💱</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript ES6</span>
+            </div>
+            <h3 class="project-title">Currency Converter</h3>
+            <p class="project-desc">Real-time currency converter with live exchange rates and dynamic country flag updates. Integrates currency exchange APIs for accurate conversions. Features responsive UI and lightning-fast performance.</p>
+            <div class="project-links">
+              <a class="project-link" href="https://irfansiddiquii.github.io/Currency-Converter/" target="_blank">Live Demo →</a>
+              <a class="project-link secondary" href="https://github.com/Irfansiddiquii/Currency-Converter" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card gsap-reveal">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a0a,#2a1a0a)">🎓</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">GSAP</span>
+            </div>
+            <h3 class="project-title">LearnHub – LMS Platform</h3>
+            <p class="project-desc">Online learning platform with video streaming, quiz engine, progress tracking, and certification generation.</p>
+            <div class="project-links">
+              <a class="project-link" href="#">Live Demo →</a>
+              <a class="project-link secondary" href="#">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="gsap-reveal">
+        <p class="section-tag">// Get In Touch</p>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-sub">Have a project in mind or want to collaborate? Drop me a message — I typically respond within 24 hours.</p>
+      </div>
+      <form class="contact-form gsap-reveal" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input class="form-field" type="text" placeholder="Your Name" required/>
+          <input class="form-field" type="email" placeholder="Your Email" required/>
+        </div>
+        <input class="form-field" type="text" placeholder="Subject"/>
+        <textarea class="form-field" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="form-submit">Send Message ✦</button>
+      </form>
+      <div class="socials gsap-reveal">
+        <a class="social-btn" href="https://github.com/Irfansiddiquii" target="_blank" title="GitHub">⚙</a>
+        <a class="social-btn" href="https://www.linkedin.com/in/Irfansiddiquiii" target="_blank" title="LinkedIn">in</a>
+        <a class="social-btn" href="https://x.com/@_irfansiddiquii" target="_blank" title="Twitter">𝕏</a>
+        <a class="social-btn" href="mailto:rfansiddiqui@gmail.com" title="Email">✉</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>© 2025 <a href="mailto:rfansiddiqui@gmail.com">Irfan Siddique</a> — All rights reserved</span>
+      <span>Built with HTML · CSS · JS · GSAP · Three.js</span>
+    </footer>
+
+  </div><!-- /wrapper -->
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
