@@ -128,22 +128,6 @@ https://irfansiddiquii.github.io/Portfolio/
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-
-Add screenshot here
-
-### Projects Section
-
-Add screenshot here
-
-### Contact Section
-
-Add screenshot here
-
----
-
 ## 📈 Future Improvements
 
 - Dark Mode
@@ -167,7 +151,7 @@ Add Your LinkedIn Profile
 
 ### Email
 
-your-email@example.com
+rfansiddiqui@gmail.com
 
 ---
 
